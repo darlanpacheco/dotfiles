@@ -1,0 +1,17 @@
+[colors.primary]
+background = "#1e1e1e"
+
+[font]
+size = 13
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
+[font.bold]
+family = "JetBrains Mono"
+style = "Bold"
+[font.bold_italic]
+family = "JetBrains Mono"
+style = "Bold Italic"
+[font.italic]
+family = "JetBrains Mono"
+style = "Italic"
