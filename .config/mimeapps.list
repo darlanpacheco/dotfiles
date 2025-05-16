@@ -1,0 +1,14 @@
+[Default Applications]
+image/png=gimp.desktop
+image/jpg=gimp.desktop
+image/jpeg=gimp.desktop
+image/webp=gimp.desktop
+video/mp4=totem.desktop
+video/webm=totem.desktop
+video/x-matroska=totem.desktop
+video/ogg=totem.desktop
+audio/mpeg=totem.desktop
+audio/wav=totem.desktop
+audio/ogg=totem.desktop
+audio/mp4=totem.desktop
+application/pdf=firefox.desktop
