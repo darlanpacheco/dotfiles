@@ -1,0 +1,15 @@
+code --install-extension asvetliakov.vscode-neovim
+code --install-extension eamodio.gitlens
+code --install-extension github.github-vscode-theme
+code --install-extension ms-vscode.vscode-typescript-next
+code --install-extension bradlc.vscode-tailwindcss
+code --install-extension dart-code.flutter
+code --install-extension ms-dotnettools.csdevkit
+code --install-extension ms-vscode.cpptools
+code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension esbenp.prettier-vscode
+code --install-extension foxundermoon.shell-format
+code --install-extension sumneko.lua
+code --install-extension lkrms.inifmt
+code --install-extension visualstudioexptteam.vscodeintellicode
+code --install-extension ms-dotnettools.vscodeintellicode-csharp
