@@ -1,0 +1,49 @@
+[
+  {
+    "key": "ctrl+right",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "neovim.mode == 'normal'"
+  },
+  {
+    "key": "ctrl+left",
+    "command": "workbench.action.focusSideBar",
+    "when": "neovim.mode == 'normal'"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "workbench.action.terminal.focus",
+    "when": "neovim.mode == 'normal'"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "neovim.mode == 'normal'"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.dirtydiff.next",
+    "when": "neovim.mode == 'normal'"
+  },
+
+  {
+    "key": "ctrl+v",
+    "command": "workbench.action.openView",
+    "when": "neovim.mode == 'normal'"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.showCommands",
+    "when": "neovim.mode == 'normal'"
+  },
+
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "terminalFocus"
+  }
+]

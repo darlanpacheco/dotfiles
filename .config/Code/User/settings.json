@@ -1,0 +1,64 @@
+{
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[properties]": {
+    "editor.defaultFormatter": "lkrms.inifmt"
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+  "[plaintext]": {
+    "editor.defaultFormatter": "lkrms.inifmt"
+  },
+  "[ini]": {
+    "editor.defaultFormatter": "lkrms.inifmt"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "lkrms.inifmt"
+  },
+
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.fontSize": 16,
+  "editor.wordWrap": "on",
+  "editor.lineNumbers": "off",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.semanticHighlighting.enabled": false,
+
+  "workbench.colorCustomizations": {
+    "editor.background": "#0f0f0f",
+    "terminal.background": "#0f0f0f",
+    "sideBar.background": "#0f0f0f",
+    "activityBar.background": "#0f0f0f",
+    "panel.background": "#0f0f0f",
+    "statusBar.background": "#0f0f0f",
+    "scrollbar.shadow": "#00000000"
+  },
+  "workbench.startupEditor": "none",
+  "workbench.editor.showTabs": "none",
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": false,
+
+  "window.menuBarVisibility": "hidden",
+  "window.titleBarStyle": "native",
+  "window.customTitleBarVisibility": "never",
+  "window.commandCenter": false,
+
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+
+  "terminal.integrated.fontSize": 16,
+  "breadcrumbs.enabled": false
+}
