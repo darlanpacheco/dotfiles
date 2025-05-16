@@ -1,0 +1,51 @@
+configuration {
+  font: "JetBrains Mono Bold 13";
+}
+
+* {
+  fg: #242424;
+  bg: #0f0f0f;
+}
+
+window {
+  children: [inputbar, listview];
+  padding: 9px;
+  border-radius: 8px;
+  border: 0px;
+  width: 500px;
+  background-color: var(bg);
+}
+
+inputbar {
+  children: [entry];
+}
+entry {
+  text-color: white;
+}
+
+listview {
+  border: none;
+  scrollbar: false;
+  lines: 5;
+}
+
+element {
+  children: [element-icon, element-text];
+  padding: 9px;
+}
+element-text {
+  text-color: white;
+}
+element normal normal {
+  background-color: var(bg);
+}
+element alternate normal {
+  background-color: var(bg);
+}
+element selected normal {
+  background-color: var(fg);
+}
+
+textbox {
+  text-color: white;
+}
