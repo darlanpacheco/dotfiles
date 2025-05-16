@@ -1,0 +1,49 @@
+* {
+  font-family: "JetBrains Mono";
+  font-weight: Bold;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0px;
+  color: #ffffff;
+}
+
+#waybar,
+button,
+button > *,
+menu,
+menuitem,
+separator {
+  background: #0f0f0f;
+}
+menuitem:hover {
+  background: #242424;
+}
+
+button {
+  padding: 7px 5px;
+}
+button label {
+  color: #242424;
+}
+button.active label {
+  color: #ffffff;
+}
+menu {
+  padding: 9px;
+  border-radius: 8px;
+}
+menuitem {
+  padding: 5px 9px;
+}
+
+#pulseaudio,
+#custom-cpu_temp,
+#memory,
+#disk {
+  padding: 7px;
+}
+#tray {
+  padding-right: 5px;
+}
