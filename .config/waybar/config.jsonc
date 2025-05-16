@@ -1,0 +1,34 @@
+{
+  "position": "top",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "custom/cpu_temp", "memory", "disk", "tray"],
+
+  "clock": {
+    "format-alt": "{:%m/%d/%Y}",
+    "tooltip": false,
+  },
+  "pulseaudio": {
+    "format": "VOL {volume}",
+    "tooltip": false,
+  },
+  "custom/cpu_temp": {
+    "exec": "cat /sys/class/hwmon/hwmon3/temp1_input | cut -c 1-2",
+    "interval": 1,
+    "format": "CPU {}",
+    "tooltip": false,
+  },
+  "memory": {
+    "interval": 1,
+    "format": "RAM {percentage}",
+    "tooltip": false,
+  },
+  "disk": {
+    "interval": 1,
+    "format": "DISK {percentage_used}",
+    "tooltip": false,
+  },
+  "tray": {
+    "icon-size": 32,
+  },
+}
