@@ -1,23 +1,32 @@
 #!/bin/bash
 
-DEVICE="/dev/x"
-BOOT_PARTITION="${DEVICE}1"
-SWAP_PARTITION="${DEVICE}2"
-ROOT_PARTITION="${DEVICE}3"
+read -p "device: " DEVICE
 
-cfdisk "$DEVICE"
+if [[ "$DEVICE" =~ [0-9]$ ]]; then
+  PART_PREFIX="p"
+else
+  PART_PREFIX=""
+fi
 
-mkfs.vfat "$BOOT_PARTITION"
-mkfs.ext4 "$ROOT_PARTITION"
-mkswap "$SWAP_PARTITION"
+BOOT_PARTITION="/dev/${DEVICE}${PART_PREFIX}1"
+SWAP_PARTITION="/dev/${DEVICE}${PART_PREFIX}2"
+ROOT_PARTITION="/dev/${DEVICE}${PART_PREFIX}3"
 
-mount "$ROOT_PARTITION" /mnt
+cfdisk "/dev/${DEVICE}"
+
+mkfs.vfat "${BOOT_PARTITION}"
+mkfs.ext4 "${ROOT_PARTITION}"
+mkswap "${SWAP_PARTITION}"
+
+mount "${ROOT_PARTITION}" /mnt
 mkdir -p /mnt/boot/efi
-mount "$BOOT_PARTITION" /mnt/boot/efi
-swapon "$SWAP_PARTITION"
+mount "${BOOT_PARTITION}" /mnt/boot/efi
+swapon "${SWAP_PARTITION}"
 
-pacstrap -K /mnt base linux linux-lts linux-firmware
+pacstrap -K /mnt base base-devel linux linux-lts linux-firmware efibootmgr grub
 
 genfstab -U /mnt >>/mnt/etc/fstab
 
-arch-chroot /mnt
+cp -r second-step.sh /mnt/root/
+chmod +x /mnt/root/second-step.sh
+arch-chroot /mnt /root/second-step.sh

@@ -1,0 +1,11 @@
+[Unit]
+Description=Run third-step in Alacritty once
+After=graphical.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/alacritty -e /usr/local/bin/third-step.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=default.target

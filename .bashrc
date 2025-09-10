@@ -6,7 +6,7 @@ alias c="clear"
 alias e="exit"
 alias q="exit"
 
-alias pSuy="sudo pacman -Suy --needed"
+alias pSuy="sudo pacman -Syu --needed"
 alias pSs="pacman -Ss"
 alias pQ="pacman -Q"
 alias pR="sudo pacman -R"
@@ -31,3 +31,4 @@ export QT_QPA_PLATFORM=wayland
 export GTK_THEME=adw-gtk3-dark
 export QT_QPA_PLATFORMTHEME=gtk3
 export PATH=$PATH:$HOME/Documents
+export PATH=$PATH:$HOME/.local/npm/bin
